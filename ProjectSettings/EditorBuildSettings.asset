@@ -21,5 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/escena4.unity
     guid: 28e31dadb4b93eb40940d6515329227d
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 66cced0be8f6ba24e99d13ceda8eb032, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d4c28508001efc34f95b98437913e6bd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 03d09e6767aae5d438e9488deaae9421, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b0b3bcad8b3aab34197a00b4916da71d, type: 2}
