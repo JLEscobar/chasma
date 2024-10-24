@@ -27,7 +27,7 @@ public class Control3 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.H) && Input.GetKey(KeyCode.B) && !IsBreathing)
+      /* if (Input.GetKey(KeyCode.H) && Input.GetKey(KeyCode.B) && !IsBreathing)
 
         {
             Contador++;
@@ -36,10 +36,10 @@ public class Control3 : MonoBehaviour
 
         {
             Contador = 0;
-        }
+        }*/
 
         slider.value = Contador;
-
+         
         if (Contador >= slider.maxValue&&NewContador>0)
         {
             Text.SetActive(false);

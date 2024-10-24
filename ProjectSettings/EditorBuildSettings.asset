@@ -5,21 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EverythingEverywhereAllAtOnce.unity
     guid: 1b76d39301726c24a97ab84b8aecd1f9
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/MantenerRespiraci\xF3n.unity"
     guid: ce6b602d14603a14bad7ebdb70e66111
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InhalaYOprimeBoton.unity
     guid: a3d756145b3b9a7468e73a2fce02dc3c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pokemon.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/escena4.unity
     guid: 28e31dadb4b93eb40940d6515329227d
+  - enabled: 1
+    path: Assets/Scenes/try.unity
+    guid: 67c89aa0615e88942a89938425654590
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9f12a66a972f9594c8899a38efcc8741, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a51d8e080ab2fa44f948465282886b12, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b2d203e305d15ee4d8de97cf8b109b58, type: 2}
