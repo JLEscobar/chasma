@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,9 +16,12 @@ public class AudioManager : MonoBehaviour
     public AudioSource Reproducete;
     public int AudioPosition;
     public GameObject Bruja;
+    public bool NowYouCanBreath;
+    public GameObject Canvas;
 
     void Start()
     {
+        NowYouCanBreath = false;
         AudioPosition = 0;
 
         Audios = new AudioClip[5];
@@ -25,7 +29,7 @@ public class AudioManager : MonoBehaviour
         Audios[2] = Audio2;
         Audios[3] = Audio3;
         Audios[4] = Audio4;
-
+       Canvas.SetActive(false);
        
     }
 
@@ -45,6 +49,8 @@ public class AudioManager : MonoBehaviour
                 else
                 {
                     Reproducete.Stop(); 
+                    Canvas.SetActive(true); 
+                    NowYouCanBreath = true;
                 }
             }
         }

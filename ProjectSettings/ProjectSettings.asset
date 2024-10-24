@@ -135,7 +135,10 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 9f12a66a972f9594c8899a38efcc8741, type: 2}
+  - {fileID: -6224738331969290957, guid: 03d09e6767aae5d438e9488deaae9421, type: 2}
+  - {fileID: 8895026357576380974, guid: b2d203e305d15ee4d8de97cf8b109b58, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -154,7 +157,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.IZJourney
+    Standalone: com.DefaultCompany.IZ-Journey
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -734,7 +739,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1

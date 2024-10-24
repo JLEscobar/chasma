@@ -4,6 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Pueblo.unity
+    guid: e79d7dc9d9863bc46bcd8b9fff6d8356
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9f12a66a972f9594c8899a38efcc8741, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b2d203e305d15ee4d8de97cf8b109b58, type: 2}
