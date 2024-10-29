@@ -8,11 +8,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] Audios;
-    public AudioClip Audio1;
-    public AudioClip Audio2;
-    public AudioClip Audio3;
-    public AudioClip Audio4;
-    public AudioClip Audio5;
+ 
     public AudioSource Reproducete;
     public int AudioPosition;
     public GameObject Bruja;
@@ -23,36 +19,29 @@ public class AudioManager : MonoBehaviour
     {
         NowYouCanBreath = false;
         AudioPosition = 0;
+        Canvas.SetActive(false);
 
-        Audios = new AudioClip[5];
-        Audios[1] = Audio1;
-        Audios[2] = Audio2;
-        Audios[3] = Audio3;
-        Audios[4] = Audio4;
-       Canvas.SetActive(false);
-       
+        PlayNext();
     }
 
-    private void FixedUpdate()
+
+    private void PlayNext()
     {
-        if (Bruja.activeInHierarchy)
-        {
-            if (!Reproducete.isPlaying)
-            {
-                if (AudioPosition < Audios.Length - 1)
-                {
-                    Reproducete.Stop();
-                    AudioPosition++;
-                    Reproducete.clip = Audios[AudioPosition];
-                    Reproducete.Play();
-                }
-                else
-                {
-                    Reproducete.Stop(); 
-                    Canvas.SetActive(true); 
-                    NowYouCanBreath = true;
-                }
-            }
-        }
+        Reproducete.Stop();
+        Reproducete.clip = Audios[AudioPosition];
+        Reproducete.Play();
+        AudioPosition++;
+
+        if (AudioPosition == Audios.Length)
+            Invoke("FinishAudios", Reproducete.clip.length);
+        else
+            Invoke("PlayNext", Reproducete.clip.length);
+    }
+
+    private void FinishAudios() 
+    {
+        Reproducete.Stop();
+        Canvas.SetActive(true);
+        NowYouCanBreath = true;
     }
 }

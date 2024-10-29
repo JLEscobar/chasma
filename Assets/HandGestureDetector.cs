@@ -15,15 +15,13 @@ public class HandGestureDetector : MonoBehaviour
     public AudioManager AudioManager;
     public bool ReproducirAudio;
     public GameObject HandRight;
-    public GameObject Canvas;
-    public int TimeForEnd;
+   
     private void Start()
     {
         ReproducirAudio = true;
         Cont = 0;  
         HandsUp = false;
         yue= yue.GetComponent<Control3>();  
-        TimeForEnd  = 0;    
     }
     void Update()
     {
@@ -45,14 +43,11 @@ public class HandGestureDetector : MonoBehaviour
             Audio.Play();
             Debug.Log("Daaaaaaaaaaaaaaaaaamn");
             ReproducirAudio=false;
-            TimeForEnd+=1;        
+                
         }
         Debug.Log(Cont);
         Debug.Log(yue.Contador);
-        if (TimeForEnd>100)
-        {
-            Canvas.SetActive(false);
-        }
+
     }
 
 
