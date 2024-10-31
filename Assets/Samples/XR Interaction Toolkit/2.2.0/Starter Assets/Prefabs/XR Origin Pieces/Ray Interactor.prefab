@@ -52,7 +52,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   m_InteractionLayers:
+<<<<<<< HEAD
     m_Bits: 55
+=======
+    m_Bits: 1
+>>>>>>> origin/main
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
